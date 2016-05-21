@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IMFRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SysInfo>
+		<MessageSequenceID>87</MessageSequenceID>
+		<MessageType>BasicData</MessageType>
+		<ServiceType>BSS2</ServiceType>
+		<OperationMode>NEW</OperationMode>
+		<SendDateTime>2015-06-23T19:10:59.487</SendDateTime>
+		<CreateDateTime>2015-06-23T19:10:59.457</CreateDateTime>
+		<OriginalDateTime>2014-05-26T11:21:35</OriginalDateTime>
+		<Receiver>IMG</Receiver>
+		<Sender>IMF</Sender>
+		<Owner>AODB</Owner>
+	</SysInfo>
+	<Data>
+		<PrimaryKey>
+			<BasicDataKey>
+				<BasicDataCategory>Airline</BasicDataCategory>
+				<BasicDataID>CZ</BasicDataID>
+			</BasicDataKey>
+		</PrimaryKey>
+		<BasicData>
+			<Airline>
+				<AirlineIATACode>CZ</AirlineIATACode>
+				<AirlineICAOCode>CSN</AirlineICAOCode>
+				<AirlineName>南方</AirlineName>
+				<AirlineHomeCountry>CN</AirlineHomeCountry>
+				<AirlineAllianceGroup xsi:nil="true"/>
+				<AirlineDescription>中国南方航空公司</AirlineDescription>
+				<AirlineHandler>NKG</AirlineHandler>
+			</Airline>
+		</BasicData>
+	</Data>
+</IMFRoot>

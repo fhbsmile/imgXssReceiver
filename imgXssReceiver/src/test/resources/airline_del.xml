@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IMFRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../OverView.xsd">
+	<SysInfo>
+		<MessageSequenceID>1</MessageSequenceID>
+		<MessageType>FlightData</MessageType>
+		<ServiceType>BSS2</ServiceType>
+		<OperationMode>NEW</OperationMode>
+		<SendDateTime>2012-07-01T13:15:00</SendDateTime>
+		<CreateDateTime>2012-07-01T13:15:00</CreateDateTime>
+		<OriginalDateTime>2012-07-01T13:14:00</OriginalDateTime>
+		<Receiver>FIDS</Receiver>
+		<Sender>IMF</Sender>
+		<Owner>AODB</Owner>
+		<Priority>3</Priority>
+	</SysInfo>
+	<Data>
+		<PrimaryKey>
+			<BasicDataKey>
+				<BasicDataCategory>Airline</BasicDataCategory>
+				<BasicDataID>MU</BasicDataID>
+			</BasicDataKey>
+		</PrimaryKey>
+		<BasicData>
+			<Airline>
+				<AirlineIATACode>MU</AirlineIATACode>
+				<AirlineICAOCode>CES</AirlineICAOCode>
+				<AirlineName>China Eastern airline</AirlineName>
+				<AirlineHomeCountry>China</AirlineHomeCountry>
+				<AirlineAllianceGroup>Sky group</AirlineAllianceGroup>
+				<AirlineDescription>China Eastern airline</AirlineDescription>
+				<AirlineHandler>CES</AirlineHandler>				
+			</Airline>
+		</BasicData>
+	</Data>
+</IMFRoot>

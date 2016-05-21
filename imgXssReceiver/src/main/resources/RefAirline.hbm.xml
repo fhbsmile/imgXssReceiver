@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 19, 2015 10:35:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.tsystems.si.aviation.img.imgXssReceiver.bean.RefAirline" table="ref_airline" catalog="img" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="ral2lc" type="string">
+            <column name="RAL_2LC" length="2" />
+        </property>
+        <property name="ralName" type="string">
+            <column name="RAL_NAME" length="80" />
+        </property>
+        <property name="ral3lc" type="string">
+            <column name="RAL_3LC" length="3" />
+        </property>
+    </class>
+</hibernate-mapping>

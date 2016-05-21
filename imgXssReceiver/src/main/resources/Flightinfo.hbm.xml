@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 19, 2015 10:35:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.tsystems.si.aviation.img.imgXssReceiver.bean.Flightinfo" table="flightinfo" catalog="img" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="flightScheduledDate" type="date">
+            <column name="FlightScheduledDate" length="10" />
+        </property>
+        <property name="flightIdentity" type="string">
+            <column name="FlightIdentity" length="20" />
+        </property>
+        <property name="callSign" type="string">
+            <column name="CallSign" length="20" />
+        </property>
+        <property name="flightDirection" type="string">
+            <column name="FlightDirection" length="2" />
+        </property>
+        <property name="flightScheduledDateTime" type="timestamp">
+            <column name="FlightScheduledDateTime" length="19" />
+        </property>
+        <property name="estimatedTakeOffDateTime" type="string">
+            <column name="EstimatedTakeOffDateTime" length="20" />
+        </property>
+        <property name="estimatedLandingDateTime" type="string">
+            <column name="EstimatedLandingDateTime" length="20" />
+        </property>
+        <property name="shareFlightIdentity" type="string">
+            <column name="ShareFlightIdentity" length="100" />
+        </property>
+        <property name="atot" type="string">
+            <column name="atot" length="20" />
+        </property>
+        <property name="aibt" type="string">
+            <column name="aibt" length="20" />
+        </property>
+        <property name="peratot" type="string">
+            <column name="peratot" length="20" />
+        </property>
+        <property name="aobt" type="string">
+            <column name="aobt" length="20" />
+        </property>
+        <property name="aldt" type="string">
+            <column name="aldt" length="20" />
+        </property>
+        <property name="createtime" type="string">
+            <column name="createtime" length="20" />
+        </property>
+        <property name="updatetime" type="string">
+            <column name="updatetime" length="20" />
+        </property>
+        <property name="iataoriginAirport" type="string">
+            <column name="IATAOriginAirport" length="3" />
+        </property>
+        <property name="iatapreviousAirport" type="string">
+            <column name="IATAPreviousAirport" length="3" />
+        </property>
+        <property name="iataviaAirport" type="string">
+            <column name="IATAViaAirport" length="100" />
+        </property>
+        <property name="iatanextAirport" type="string">
+            <column name="IATANextAirport" length="3" />
+        </property>
+        <property name="iatadestinationAirport" type="string">
+            <column name="IATADestinationAirport" length="3" />
+        </property>
+        <property name="registration" type="string">
+            <column name="registration" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IMFRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../OverView.xsd">
+	<SysInfo>
+		<MessageSequenceID>3</MessageSequenceID>
+		<MessageType>FlightData</MessageType>
+		<ServiceType>FSS2</ServiceType>
+		<OperationMode>DEL</OperationMode>
+		<SendDateTime>2012-07-01T13:15:00</SendDateTime>
+		<CreateDateTime>2012-07-01T13:15:00</CreateDateTime>
+		<OriginalDateTime>2012-07-01T13:14:00</OriginalDateTime>
+		<Receiver>FIDS</Receiver>
+		<Sender>IMF</Sender>
+		<Owner>AODB</Owner>
+		<Priority>5</Priority>
+	</SysInfo>
+	<Data>
+		<PrimaryKey>
+			<FlightKey>
+				<FlightScheduledDate>2012-07-01</FlightScheduledDate>
+				<FlightIdentity>CA1234</FlightIdentity>
+				<FlightDirection>A</FlightDirection>
+				<BaseAirport>
+					<AirportIATACode>NKG</AirportIATACode>
+				</BaseAirport>
+				<DetailedIdentity>
+					<AirlineIATACode>CA</AirlineIATACode>
+					<AirlineICAOCode>CCA</AirlineICAOCode>
+					<FlightNumber>1234</FlightNumber>
+				</DetailedIdentity>
+			</FlightKey>
+		</PrimaryKey>		
+	</Data>
+</IMFRoot>

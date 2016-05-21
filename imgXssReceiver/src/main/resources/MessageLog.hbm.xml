@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 19, 2015 10:35:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.tsystems.si.aviation.img.imgXssReceiver.bean.MessageLog" table="message_log" catalog="img" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="msgserial" type="string">
+            <column name="msgserial" length="30" />
+        </property>
+        <property name="messagetime" type="timestamp">
+            <column name="messagetime" length="19" />
+        </property>
+        <property name="bytelength" type="java.lang.Integer">
+            <column name="bytelength" />
+        </property>
+        <property name="line" type="java.lang.Integer">
+            <column name="line" />
+        </property>
+        <property name="sendtime" type="timestamp">
+            <column name="sendtime" length="19" />
+        </property>
+        <property name="difftime" type="java.lang.Integer">
+            <column name="difftime" />
+        </property>
+        <property name="filename" type="string">
+            <column name="filename" length="500" />
+        </property>
+        <property name="createtime" type="timestamp">
+            <column name="createtime" length="19" />
+        </property>
+        <property name="orgtime" type="string">
+            <column name="orgtime" length="20" />
+        </property>
+        <property name="msgtype" type="string">
+            <column name="msgtype" length="10" />
+        </property>
+        <property name="msg" type="string">
+            <column name="msg" length="20000" />
+        </property>
+        <property name="xmlmsg" type="string">
+            <column name="xmlmsg" length="20000" />
+        </property>
+        <property name="flightnumber" type="string">
+            <column name="flightnumber" length="20" />
+        </property>
+        <property name="flightreg" type="string">
+            <column name="flightreg" length="20" />
+        </property>
+        <property name="takeoffAirport" type="string">
+            <column name="takeoffAirport" length="20" />
+        </property>
+        <property name="takeofftime" type="string">
+            <column name="takeofftime" length="20" />
+        </property>
+        <property name="landAirport" type="string">
+            <column name="landAirport" length="20" />
+        </property>
+        <property name="landtime" type="string">
+            <column name="landtime" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

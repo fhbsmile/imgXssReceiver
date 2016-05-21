@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration scan="true">
+
+	<!--default client setting -->
+	<property resource="imf_client.properties" />
+
+	<!-- user custom settings, if not existed, will use the default setting above -->
+	<property resource="imf_client_custom.properties" />
+
+	<appender name="IMF_ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${APP_USER_HOME}/logs/adapterLog.log</file>
+		<append>false</append>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- rollover daily -->
+			<fileNamePattern>${APP_USER_HOME}/logs/%d{dd}/adapterLog-%d{yyyy-MM-dd}-%i.zip</fileNamePattern>
+			<maxHistory>${IMFLOG_DAYS}</maxHistory>
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- or whenever the file size reaches 100MB -->
+				<maxFileSize>${IMFLOG_SIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="MESSAGE_ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${APP_USER_HOME}/logs/messages.log</file>
+
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- rollover daily -->
+			<fileNamePattern>${APP_USER_HOME}/logs/%d{dd}/messages-%d{yyyy-MM-dd}-%i.zip</fileNamePattern>
+			<maxHistory>${IMFLOG_DAYS}</maxHistory>
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- or whenever the file size reaches 100MB -->
+				<maxFileSize>${IMFLOG_SIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>		
+	
+	<appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${APP_USER_HOME}/logs/clientLog.log</file>
+		<append>false</append>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- rollover daily -->
+			<fileNamePattern>${APP_USER_HOME}/logs/%d{dd}/clientLog-%d{yyyy-MM-dd}-%i.zip</fileNamePattern>
+			<maxHistory>${IMFLOG_DAYS}</maxHistory>
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- or whenever the file size reaches 100MB -->
+				<maxFileSize>${IMFLOG_SIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	<appender name="IMG_Bss" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${APP_USER_HOME}/logs/img_Bss.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- rollover daily -->
+			<fileNamePattern>${APP_USER_HOME}/logs/%d{dd}/img_Bss-%d{yyyy-MM-dd}-%i.zip</fileNamePattern>
+			<maxHistory>${IMFLOG_DAYS}</maxHistory>
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- or whenever the file size reaches 100MB -->
+				<maxFileSize>${IMFLOG_SIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+		<appender name="IMG_Fss" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${APP_USER_HOME}/logs/img_Fss.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- rollover daily -->
+			<fileNamePattern>${APP_USER_HOME}/logs/%d{dd}/img_Fss-%d{yyyy-MM-dd}-%i.zip</fileNamePattern>
+			<maxHistory>${IMFLOG_DAYS}</maxHistory>
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- or whenever the file size reaches 100MB -->
+				<maxFileSize>${IMFLOG_SIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+		<appender name="IMG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${APP_USER_HOME}/logs/img.log</file>
+		<append>false</append>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- rollover daily -->
+			<fileNamePattern>${APP_USER_HOME}/logs/%d{dd}/img-%d{yyyy-MM-dd}-%i.zip</fileNamePattern>
+			<maxHistory>${IMFLOG_DAYS}</maxHistory>
+			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<!-- or whenever the file size reaches 100MB -->
+				<maxFileSize>${IMFLOG_SIZE}</maxFileSize>
+			</timeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	  <appender name="STDOUT"
+    class="ch.qos.logback.core.ConsoleAppender">
+    <!-- encoders are assigned by default the type
+         ch.qos.logback.classic.encoder.PatternLayoutEncoder -->
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+ 	<logger name="com.tsystems.aviation.imf.client" level="${IMFLOG_LEVEL}">
+ 		<appender-ref ref="IMF_ROLLING" />
+ 	</logger>
+
+ 	<logger name="com.tsystems.aviation.imf.client.connector.JmsConnector" level="DEBUG">
+ 		<appender-ref ref="MESSAGE_ROLLING" />
+ 	</logger>
+ 	
+ 	<logger name="com.tsystems.aviation.imf.client.message" level="DEBUG">
+ 		<appender-ref ref="MESSAGE_ROLLING" />
+ 	</logger>
+ 	
+ 	<logger name="com.tsystems.aviation.mqif.adapter" level="DEBUG">
+ 		<appender-ref ref="MESSAGE_ROLLING" />
+ 	</logger>
+ 	 	<logger name="com.tsystems.si.aviation.img.imgXssReceiver.imf.fss" level="info">
+ 		<appender-ref ref="IMG_Fss" />
+ 	</logger>
+ 	 	<logger name="com.tsystems.si.aviation.img.imgXssReceiver.service.impl.FlightServiceImpl" level="info">
+ 		<appender-ref ref="IMG_Fss" />
+ 	</logger>
+ 	 	<logger name="com.tsystems.si.aviation.img.imgXssReceiver.imf.bss" level="info">
+ 		<appender-ref ref="IMG_Bss" />
+ 	</logger>
+ 	 	 	<logger name="com.tsystems.si.aviation.img.imgXssReceiver.service.impl.AirlineServiceImpl" level="info">
+ 		<appender-ref ref="IMG_Bss" />
+ 	</logger>
+ 	 <logger name="com.tsystems.si.aviation.img.imgXssReceiver.service.impl.AirportServiceImpl" level="info">
+ 	<appender-ref ref="IMG_Bss" />
+ 	</logger>
+ 	 	 	<logger name="com.tsystems.si.aviation.img" level="info">
+ 		<appender-ref ref="IMG" />
+ 	</logger>
+	<root level="${IMFLOG_LEVEL}">
+		<appender-ref ref="ROLLING" />
+		 <appender-ref ref="STDOUT" />
+	</root>
+
+</configuration>
+

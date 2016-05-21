@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IMFRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <SysInfo>
+  <MessageSequenceID>286062</MessageSequenceID>
+  <MessageType>FlightData</MessageType>
+  <ServiceType>FSS1</ServiceType>
+  <OperationMode>MOD</OperationMode>
+  <SendDateTime>2015-06-08T09:56:58.234</SendDateTime>
+  <CreateDateTime>2015-06-08T09:56:58.205</CreateDateTime>
+  <OriginalDateTime>2015-06-08T09:56:57</OriginalDateTime>
+  <Receiver>IMG</Receiver>
+  <Sender>IMF</Sender>
+  <Owner>AODB</Owner>
+ </SysInfo>
+ <Data>
+  <PrimaryKey>
+   <FlightKey>
+    <FlightScheduledDate>2015-06-17</FlightScheduledDate>
+    <FlightIdentity>3U8839</FlightIdentity>
+    <FlightDirection>A</FlightDirection>
+    <BaseAirport>
+     <AirportIATACode>NKG</AirportIATACode>
+     <AirportICAOCode>ZSNJ</AirportICAOCode>
+    </BaseAirport>
+    <DetailedIdentity>
+     <AirlineIATACode>3U</AirlineIATACode>
+     <AirlineICAOCode>CSC</AirlineICAOCode>
+     <FlightNumber>8839</FlightNumber>
+     <FlightSuffix/>
+    </DetailedIdentity>
+   </FlightKey>
+  </PrimaryKey>
+  <FlightData>
+   <General>
+    <FlightScheduledDateTime>2015-06-17T19:00:00</FlightScheduledDateTime>
+    <Registration>B6906</Registration>
+    <CallSign>CSC8839</CallSign>
+    <AircraftType>
+     <AircraftIATACode>321</AircraftIATACode>
+     <AircraftICAOCode>A321</AircraftICAOCode>
+    </AircraftType>
+    <FlightServiceType>W/Z</FlightServiceType>
+    <FlightRoute>
+     <IATARoute>
+      <IATAOriginAirport>CKG</IATAOriginAirport>
+      <IATAPreviousAirport>CKG</IATAPreviousAirport>
+     </IATARoute>
+     <ICAORoute>
+      <ICAOOriginAirport>ZUCK</ICAOOriginAirport>
+      <ICAOPreviousAirport>ZUCK</ICAOPreviousAirport>
+     </ICAORoute>
+    </FlightRoute>
+    <FlightCountryType>D</FlightCountryType>
+    <LinkFlight>
+     <FlightScheduledDate>2015-06-08</FlightScheduledDate>
+     <FlightIdentity>3U8839</FlightIdentity>
+     <FlightDirection>D</FlightDirection>
+     <BaseAirport>
+      <AirportIATACode>NKG</AirportIATACode>
+      <AirportICAOCode>ZSNJ</AirportICAOCode>
+     </BaseAirport>
+     <DetailedIdentity>
+      <AirlineIATACode>3U</AirlineIATACode>
+      <AirlineICAOCode>CSC</AirlineICAOCode>
+      <FlightNumber>8839</FlightNumber>
+      <FlightSuffix/>
+     </DetailedIdentity>
+    </LinkFlight>
+    <IsMasterFlight>Y</IsMasterFlight>
+    <MasterOrSlaveFlight>
+     <FlightIdentity/>
+     <FlightScheduledDate xsi:nil="true"/>
+     <FlightDirection/>
+    </MasterOrSlaveFlight>
+    <FreeTextComment>
+     <PublicTextComment xsi:nil="true"/>
+    </FreeTextComment>
+   </General>
+   <OperationalDateTime>
+    <PreviousAirportDepartureDateTime>
+     <ScheduledPreviousAirportDepartureDateTime>2015-06-08T08:05:00</ScheduledPreviousAirportDepartureDateTime>
+     <EstimatedPreviousAirportDepartureDateTime xsi:nil="true"/>
+     <ActualPreviousAirportDepartureDateTime>2015-06-08T08:12:00</ActualPreviousAirportDepartureDateTime>
+    </PreviousAirportDepartureDateTime>
+    <TenMilesDateTime xsi:nil="true"/>
+    <LandingDateTime>
+     <ScheduledLandingDateTime>2015-06-08T10:00:00</ScheduledLandingDateTime>
+     <EstimatedLandingDateTime>2015-06-08T09:47:00</EstimatedLandingDateTime>
+     <ActualLandingDateTime>2015-06-08T09:45:00</ActualLandingDateTime>
+    </LandingDateTime>
+    <OnBlockDateTime>
+     <ScheduledOnBlockDateTime>2015-06-08T10:05:00</ScheduledOnBlockDateTime>
+     <EstimatedOnBlockDateTime>2015-06-08T09:50:00</EstimatedOnBlockDateTime>
+     <ActualOnBlockDateTime>2015-06-08T09:49:00</ActualOnBlockDateTime>
+    </OnBlockDateTime>
+    <DoorOpenDateTime>
+     <ActualDoorOpenDateTime xsi:nil="true"/>
+    </DoorOpenDateTime>
+    <OnBridgeDateTime>
+     <ActualOnBridgeDateTime xsi:nil="true"/>
+    </OnBridgeDateTime>
+    <BestKnownDateTime xsi:nil="true"/>
+   </OperationalDateTime>
+   <Status>
+    <OperationStatus/>
+    <FlightStatus>N</FlightStatus>
+    <DelayReason>
+     <DelayCode/>
+     <DelayFreeText/>
+    </DelayReason>
+    <DiversionAirport>
+     <AirportIATACode/>
+     <AirportICAOCode/>
+    </DiversionAirport>
+    <ChangeLandingAirport>
+     <AirportIATACode/>
+     <AirportICAOCode/>
+    </ChangeLandingAirport>
+    <DisplayCode>P</DisplayCode>
+    <IsTransitFlight xsi:nil="true"/>
+    <IsOverNightFlight>N</IsOverNightFlight>
+   </Status>
+   <Payload>
+    <DepartureAirport>CKG</DepartureAirport>
+    <DestinationAirport>NKG</DestinationAirport>
+    <Passenger>
+     <PassengersNumber>
+      <TotalPassengersNumber>0</TotalPassengersNumber>
+      <FirstClassPassengersNumber xsi:nil="true"/>
+      <BusinessClassPassengersNumber xsi:nil="true"/>
+      <EconomicClassPassengersNumber xsi:nil="true"/>
+     </PassengersNumber>
+     <AdultPassengers>
+      <TotalAdultPassengersNumber xsi:nil="true"/>
+      <FirstClassAdultPassengersNumber xsi:nil="true"/>
+      <BusinessClassAdultPassengersNumber xsi:nil="true"/>
+      <EconomicClassAdultPassengersNumber xsi:nil="true"/>
+     </AdultPassengers>
+     <ChildPassengers>
+      <TotalChildPassengersNumber xsi:nil="true"/>
+      <FirstClassChildPassengersNumber xsi:nil="true"/>
+      <BusinessClassChildPassengersNumber xsi:nil="true"/>
+      <EconomicClassChildPassengersNumber xsi:nil="true"/>
+     </ChildPassengers>
+     <InfantPassengers>
+      <TotalInfantPassengersNumber xsi:nil="true"/>
+      <FirstClassInfantPassengersNumber xsi:nil="true"/>
+      <BusinessClassInfantPassengersNumber xsi:nil="true"/>
+      <EconomicClassInfantPassengersNumber xsi:nil="true"/>
+     </InfantPassengers>
+    </Passenger>
+    <Weight>
+     <TotalWeight>0</TotalWeight>
+     <BaggageWeight xsi:nil="true"/>
+     <CargoWeight xsi:nil="true"/>
+     <MailWeight xsi:nil="true"/>
+    </Weight>
+   </Payload>
+   <Payload>
+    <DepartureAirport/>
+    <DestinationAirport/>
+    <Passenger>
+     <PassengersNumber>
+      <TotalPassengersNumber>0</TotalPassengersNumber>
+      <FirstClassPassengersNumber>0</FirstClassPassengersNumber>
+      <BusinessClassPassengersNumber>0</BusinessClassPassengersNumber>
+      <EconomicClassPassengersNumber>0</EconomicClassPassengersNumber>
+     </PassengersNumber>
+     <AdultPassengers>
+      <TotalAdultPassengersNumber>0</TotalAdultPassengersNumber>
+      <FirstClassAdultPassengersNumber>0</FirstClassAdultPassengersNumber>
+      <BusinessClassAdultPassengersNumber>0</BusinessClassAdultPassengersNumber>
+      <EconomicClassAdultPassengersNumber>0</EconomicClassAdultPassengersNumber>
+     </AdultPassengers>
+     <ChildPassengers>
+      <TotalChildPassengersNumber>0</TotalChildPassengersNumber>
+      <FirstClassChildPassengersNumber>0</FirstClassChildPassengersNumber>
+      <BusinessClassChildPassengersNumber>0</BusinessClassChildPassengersNumber>
+      <EconomicClassChildPassengersNumber>0</EconomicClassChildPassengersNumber>
+     </ChildPassengers>
+     <InfantPassengers>
+      <TotalInfantPassengersNumber>0</TotalInfantPassengersNumber>
+      <FirstClassInfantPassengersNumber>0</FirstClassInfantPassengersNumber>
+      <BusinessClassInfantPassengersNumber>0</BusinessClassInfantPassengersNumber>
+      <EconomicClassInfantPassengersNumber>0</EconomicClassInfantPassengersNumber>
+     </InfantPassengers>
+    </Passenger>
+    <Weight>
+     <TotalWeight>0</TotalWeight>
+     <BaggageWeight>0</BaggageWeight>
+     <CargoWeight>0</CargoWeight>
+     <MailWeight>0</MailWeight>
+    </Weight>
+   </Payload>
+   <Airport>
+    <Terminal>
+     <FlightTerminalID>T2</FlightTerminalID>
+     <AircraftTerminalID/>
+    </Terminal>
+    <Runway>
+     <RunwayID>25</RunwayID>
+    </Runway>
+    <Stand>
+     <StandID>215</StandID>
+     <ScheduledStandStartDateTime>2015-06-08T09:50:00</ScheduledStandStartDateTime>
+     <ScheduledStandEndDateTime>2015-06-08T10:40:00</ScheduledStandEndDateTime>
+     <ActualStandStartDateTime>2015-06-08T09:49:00</ActualStandStartDateTime>
+     <ActualStandEndDateTime xsi:nil="true"/>
+    </Stand>
+    <Gate>
+     <GateID/>
+     <GateStatus xsi:nil="true"/>
+     <ScheduledGateStartDateTime xsi:nil="true"/>
+     <ScheduledGateEndDateTime xsi:nil="true"/>
+     <ActualGateStartDateTime xsi:nil="true"/>
+     <ActualGateEndDateTime xsi:nil="true"/>
+     <BoardingStartDateTime xsi:nil="true"/>
+     <LastCallDateTime xsi:nil="true"/>
+     <BoardingEndDateTime xsi:nil="true"/>
+    </Gate>
+    <BaggageReclaim>
+     <BaggageReclaimID>08</BaggageReclaimID>
+     <ScheduledReclaimStartDateTime>2015-06-08T10:06:00</ScheduledReclaimStartDateTime>
+     <ScheduledReclaimEndDateTime>2015-06-08T10:31:00</ScheduledReclaimEndDateTime>
+     <ActualReclaimStartDateTime>2015-06-08T09:55:00</ActualReclaimStartDateTime>
+     <ActualReclaimEndDateTime xsi:nil="true"/>
+     <FirstBaggageDateTime>2015-06-08T09:55:00</FirstBaggageDateTime>
+     <LastBaggageDateTime OldValue="">2015-06-08T09:56:00</LastBaggageDateTime>
+    </BaggageReclaim>
+   </Airport>
+  </FlightData>
+ </Data>
+</IMFRoot>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IMFRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <SysInfo>
+  <MessageSequenceID>8676</MessageSequenceID>
+  <MessageType>BasicData</MessageType>
+  <ServiceType>BSS1</ServiceType>
+  <OperationMode>DEL</OperationMode>
+  <SendDateTime>2015-06-13T01:11:08.586</SendDateTime>
+  <CreateDateTime>2015-06-13T01:11:08.581</CreateDateTime>
+  <OriginalDateTime>2015-06-13T01:11:06</OriginalDateTime>
+  <Receiver>IMG</Receiver>
+  <Sender>IMF</Sender>
+  <Owner>AODB</Owner>
+ </SysInfo>
+ <Data>
+  <PrimaryKey>
+   <BasicDataKey>
+    <BasicDataCategory>Airport</BasicDataCategory>
+    <BasicDataID>MZG</BasicDataID>
+   </BasicDataKey>
+  </PrimaryKey>
+ </Data>
+</IMFRoot>

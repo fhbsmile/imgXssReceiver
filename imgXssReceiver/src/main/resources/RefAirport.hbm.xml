@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 19, 2015 10:35:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.tsystems.si.aviation.img.imgXssReceiver.bean.RefAirport" table="ref_airport" catalog="img" optimistic-lock="version">
+        <id name="rapCode" type="string">
+            <column name="RAP_CODE" length="4" />
+            <generator class="assigned" />
+        </id>
+        <property name="rapIata3lc" type="string">
+            <column name="RAP_IATA3LC" length="3" />
+        </property>
+        <property name="rapIcao4lc" type="string">
+            <column name="RAP_ICAO4LC" length="4" />
+        </property>
+        <property name="rapCity" type="string">
+            <column name="RAP_CITY" length="50" />
+        </property>
+        <property name="rapFlytime" type="string">
+            <column name="RAP_FLYTIME" length="11" />
+        </property>
+    </class>
+</hibernate-mapping>

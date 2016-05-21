@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jun 19, 2015 10:35:39 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.tsystems.si.aviation.img.imgXssReceiver.bean.XmlMessageLog" table="xml_message_log" catalog="img" optimistic-lock="version">
+        <id name="id" type="java.lang.Long">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="messageId" type="java.lang.Long">
+            <column name="message_id" />
+        </property>
+        <property name="filename" type="string">
+            <column name="filename" length="300" />
+        </property>
+        <property name="flightDirection" type="string">
+            <column name="flightDirection" length="10" />
+        </property>
+        <property name="flightScheduledDate" type="string">
+            <column name="flightScheduledDate" length="20" />
+        </property>
+        <property name="flightScheduledDateTime" type="string">
+            <column name="flightScheduledDateTime" length="20" />
+        </property>
+        <property name="flightnumber" type="string">
+            <column name="flightnumber" length="20" />
+        </property>
+        <property name="reg" type="string">
+            <column name="reg" length="10" />
+        </property>
+        <property name="takeoffairport" type="string">
+            <column name="takeoffairport" length="20" />
+        </property>
+        <property name="landairport" type="string">
+            <column name="landairport" length="20" />
+        </property>
+        <property name="takeofftime" type="string">
+            <column name="takeofftime" length="20" />
+        </property>
+        <property name="pretakeofftime" type="string">
+            <column name="pretakeofftime" length="20" />
+        </property>
+        <property name="landtime" type="string">
+            <column name="landtime" length="20" />
+        </property>
+        <property name="nextlandtime" type="string">
+            <column name="nextlandtime" length="20" />
+        </property>
+        <property name="xmlmsg" type="string">
+            <column name="xmlmsg" length="5000" />
+        </property>
+        <property name="createtime" type="timestamp">
+            <column name="createtime" length="19" />
+        </property>
+        <property name="sendtime" type="timestamp">
+            <column name="sendtime" length="19" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="2" />
+        </property>
+        <property name="orgMessageSendTime" type="string">
+            <column name="OrgMessageSendTime" length="20" />
+        </property>
+        <property name="usState" type="string">
+            <column name="us_state" length="2" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IMFRoot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <SysInfo>
+  <MessageSequenceID>286070</MessageSequenceID>
+  <MessageType>FlightData</MessageType>
+  <ServiceType>FSS1</ServiceType>
+  <OperationMode>MOD</OperationMode>
+  <SendDateTime>2015-06-08T09:58:36.522</SendDateTime>
+  <CreateDateTime>2015-06-08T09:58:36.509</CreateDateTime>
+  <OriginalDateTime>2015-06-08T09:58:35</OriginalDateTime>
+  <Receiver>IMG</Receiver>
+  <Sender>IMF</Sender>
+  <Owner>AODB</Owner>
+ </SysInfo>
+ <Data>
+  <PrimaryKey>
+   <FlightKey>
+    <FlightScheduledDate>2015-06-08</FlightScheduledDate>
+    <FlightIdentity>NS3225</FlightIdentity>
+    <FlightDirection>D</FlightDirection>
+    <BaseAirport>
+     <AirportIATACode>NKG</AirportIATACode>
+     <AirportICAOCode>ZSNJ</AirportICAOCode>
+    </BaseAirport>
+    <DetailedIdentity>
+     <AirlineIATACode>NS</AirlineIATACode>
+     <AirlineICAOCode>HBH</AirlineICAOCode>
+     <FlightNumber>3225</FlightNumber>
+     <FlightSuffix/>
+    </DetailedIdentity>
+   </FlightKey>
+  </PrimaryKey>
+  <FlightData>
+   <General>
+    <FlightScheduledDateTime>2015-06-08T10:10:00</FlightScheduledDateTime>
+    <Registration>B5215</Registration>
+    <CallSign>HBH3225</CallSign>
+    <AircraftType>
+     <AircraftIATACode>737</AircraftIATACode>
+     <AircraftICAOCode>B737</AircraftICAOCode>
+    </AircraftType>
+    <FlightServiceType>W/Z</FlightServiceType>
+    <FlightRoute>
+     <IATARoute>
+      <IATANextAirport>XMN</IATANextAirport>
+      <IATADestinationAirport>XMN</IATADestinationAirport>
+     </IATARoute>
+     <ICAORoute>
+      <ICAONextAirport>ZSAM</ICAONextAirport>
+      <ICAODestinationAirport>ZSAM</ICAODestinationAirport>
+     </ICAORoute>
+    </FlightRoute>
+    <FlightCountryType>D</FlightCountryType>
+    <LinkFlight>
+     <FlightScheduledDate>2015-06-08</FlightScheduledDate>
+     <FlightIdentity>NS3225</FlightIdentity>
+     <FlightDirection>A</FlightDirection>
+     <BaseAirport>
+      <AirportIATACode>NKG</AirportIATACode>
+      <AirportICAOCode>ZSNJ</AirportICAOCode>
+     </BaseAirport>
+     <DetailedIdentity>
+      <AirlineIATACode>NS</AirlineIATACode>
+      <AirlineICAOCode>HBH</AirlineICAOCode>
+      <FlightNumber>3225</FlightNumber>
+      <FlightSuffix/>
+     </DetailedIdentity>
+    </LinkFlight>
+    <IsMasterFlight>Y</IsMasterFlight>
+    <MasterOrSlaveFlight>
+     <FlightIdentity>MF7001</FlightIdentity>
+     <FlightScheduledDate>2015-06-08</FlightScheduledDate>
+     <FlightDirection>D</FlightDirection>
+    </MasterOrSlaveFlight>
+        <MasterOrSlaveFlight>
+     <FlightIdentity>MF7002</FlightIdentity>
+     <FlightScheduledDate>2015-06-08</FlightScheduledDate>
+     <FlightDirection>D</FlightDirection>
+    </MasterOrSlaveFlight>
+    <FreeTextComment>
+     <PublicTextComment xsi:nil="true"/>
+    </FreeTextComment>
+   </General>
+   <OperationalDateTime>
+    <OffBlockDateTime>
+     <ScheduledOffBlockDateTime>2015-06-08T10:00:00</ScheduledOffBlockDateTime>
+     <EstimatedOffBlockDateTime>2015-06-08T10:25:00</EstimatedOffBlockDateTime>
+     <ActualOffBlockDateTime xsi:nil="true"/>
+    </OffBlockDateTime>
+    <TakeOffDateTime>
+     <ScheduledTakeOffDateTime>2015-06-08T10:10:00</ScheduledTakeOffDateTime>
+     <EstimatedTakeOffDateTime xsi:nil="true"/>
+     <ActualTakeOffDateTime xsi:nil="true"/>
+    </TakeOffDateTime>
+    <DoorCloseDateTime>
+     <ActualDoorCloseDateTime xsi:nil="true"/>
+    </DoorCloseDateTime>
+    <OffBridgeDateTime>
+     <ActualOffBridgeDateTime xsi:nil="true"/>
+    </OffBridgeDateTime>
+    <NextAirportArrivalDateTime>
+     <ScheduledNextAirportArrivalDateTime>2015-06-08T11:50:00</ScheduledNextAirportArrivalDateTime>
+     <EstimatedNextAirportArrivalDateTime xsi:nil="true"/>
+     <ActualNextAirportArrivalDateTime xsi:nil="true"/>
+    </NextAirportArrivalDateTime>
+    <BestKnownDateTime xsi:nil="true"/>
+   </OperationalDateTime>
+   <Status>
+    <OperationStatus/>
+    <FlightStatus>S</FlightStatus>
+    <DelayReason>
+     <DelayCode/>
+     <DelayFreeText/>
+    </DelayReason>
+    <DisplayCode>P</DisplayCode>
+    <IsTransitFlight xsi:nil="true"/>
+    <IsOverNightFlight>N</IsOverNightFlight>
+   </Status>
+   <Payload>
+    <DepartureAirport>NKG</DepartureAirport>
+    <DestinationAirport>XMN</DestinationAirport>
+    <Passenger>
+     <PassengersNumber>
+      <TotalPassengersNumber>42</TotalPassengersNumber>
+      <FirstClassPassengersNumber>0</FirstClassPassengersNumber>
+      <BusinessClassPassengersNumber>0</BusinessClassPassengersNumber>
+      <EconomicClassPassengersNumber>42</EconomicClassPassengersNumber>
+     </PassengersNumber>
+     <AdultPassengers>
+      <TotalAdultPassengersNumber>42</TotalAdultPassengersNumber>
+      <FirstClassAdultPassengersNumber xsi:nil="true"/>
+      <BusinessClassAdultPassengersNumber xsi:nil="true"/>
+      <EconomicClassAdultPassengersNumber xsi:nil="true"/>
+     </AdultPassengers>
+     <ChildPassengers>
+      <TotalChildPassengersNumber>0</TotalChildPassengersNumber>
+      <FirstClassChildPassengersNumber xsi:nil="true"/>
+      <BusinessClassChildPassengersNumber xsi:nil="true"/>
+      <EconomicClassChildPassengersNumber xsi:nil="true"/>
+     </ChildPassengers>
+     <InfantPassengers>
+      <TotalInfantPassengersNumber>0</TotalInfantPassengersNumber>
+      <FirstClassInfantPassengersNumber xsi:nil="true"/>
+      <BusinessClassInfantPassengersNumber xsi:nil="true"/>
+      <EconomicClassInfantPassengersNumber xsi:nil="true"/>
+     </InfantPassengers>
+    </Passenger>
+    <Weight>
+     <TotalWeight>119</TotalWeight>
+     <BaggageWeight>119</BaggageWeight>
+     <CargoWeight xsi:nil="true"/>
+     <MailWeight xsi:nil="true"/>
+    </Weight>
+   </Payload>
+   <Payload>
+    <DepartureAirport/>
+    <DestinationAirport/>
+    <Passenger>
+     <PassengersNumber>
+      <TotalPassengersNumber>42</TotalPassengersNumber>
+      <FirstClassPassengersNumber>0</FirstClassPassengersNumber>
+      <BusinessClassPassengersNumber>0</BusinessClassPassengersNumber>
+      <EconomicClassPassengersNumber>42</EconomicClassPassengersNumber>
+     </PassengersNumber>
+     <AdultPassengers>
+      <TotalAdultPassengersNumber>42</TotalAdultPassengersNumber>
+      <FirstClassAdultPassengersNumber>0</FirstClassAdultPassengersNumber>
+      <BusinessClassAdultPassengersNumber>0</BusinessClassAdultPassengersNumber>
+      <EconomicClassAdultPassengersNumber>0</EconomicClassAdultPassengersNumber>
+     </AdultPassengers>
+     <ChildPassengers>
+      <TotalChildPassengersNumber>0</TotalChildPassengersNumber>
+      <FirstClassChildPassengersNumber>0</FirstClassChildPassengersNumber>
+      <BusinessClassChildPassengersNumber>0</BusinessClassChildPassengersNumber>
+      <EconomicClassChildPassengersNumber>0</EconomicClassChildPassengersNumber>
+     </ChildPassengers>
+     <InfantPassengers>
+      <TotalInfantPassengersNumber>0</TotalInfantPassengersNumber>
+      <FirstClassInfantPassengersNumber>0</FirstClassInfantPassengersNumber>
+      <BusinessClassInfantPassengersNumber>0</BusinessClassInfantPassengersNumber>
+      <EconomicClassInfantPassengersNumber>0</EconomicClassInfantPassengersNumber>
+     </InfantPassengers>
+    </Passenger>
+    <Weight>
+     <TotalWeight>119</TotalWeight>
+     <BaggageWeight>119</BaggageWeight>
+     <CargoWeight>0</CargoWeight>
+     <MailWeight>0</MailWeight>
+    </Weight>
+   </Payload>
+   <Airport>
+    <Terminal>
+     <FlightTerminalID>T2</FlightTerminalID>
+     <AircraftTerminalID/>
+    </Terminal>
+    <Runway>
+     <RunwayID/>
+    </Runway>
+    <Stand>
+     <StandID>212</StandID>
+     <ScheduledStandStartDateTime>2015-06-08T09:45:00</ScheduledStandStartDateTime>
+     <ScheduledStandEndDateTime>2015-06-08T10:00:00</ScheduledStandEndDateTime>
+     <ActualStandStartDateTime>2015-06-08T09:48:00</ActualStandStartDateTime>
+     <ActualStandEndDateTime xsi:nil="true"/>
+    </Stand>
+    <BaggageMakeup>
+     <BaggageBeltID>03</BaggageBeltID>
+     <BaggageBeltStatus>B</BaggageBeltStatus>
+     <ScheduledMakeupStartDateTime>2015-06-08T04:10:00</ScheduledMakeupStartDateTime>
+     <ScheduledMakeupEndDateTime>2015-06-08T09:50:00</ScheduledMakeupEndDateTime>
+     <ActualMakeupStartDateTime>2015-06-08T04:10:00</ActualMakeupStartDateTime>
+     <ActualMakeupEndDateTime xsi:nil="true"/>
+    </BaggageMakeup>
+    <Gate>
+     <GateID>12</GateID>
+     <GateStatus OldValue="S">B</GateStatus>
+     <ScheduledGateStartDateTime>2015-06-08T09:25:00</ScheduledGateStartDateTime>
+     <ScheduledGateEndDateTime>2015-06-08T10:00:00</ScheduledGateEndDateTime>
+     <ActualGateStartDateTime OldValue="">2015-06-08T09:58:00</ActualGateStartDateTime>
+     <ActualGateEndDateTime xsi:nil="true"/>
+     <BoardingStartDateTime OldValue="">2015-06-08T09:58:00</BoardingStartDateTime>
+     <LastCallDateTime xsi:nil="true"/>
+     <BoardingEndDateTime xsi:nil="true"/>
+    </Gate>
+    <CheckInDesk>
+     <CheckInDeskID>ZZ</CheckInDeskID>
+     <CheckInType>Y</CheckInType>
+     <CheckInStatus>E</CheckInStatus>
+     <CheckInClassService>Y</CheckInClassService>
+     <ScheduledCheckInBeginDateTime>2015-06-08T07:40:00</ScheduledCheckInBeginDateTime>
+     <ScheduledCheckInEndDateTime>2015-06-08T09:40:00</ScheduledCheckInEndDateTime>
+     <ActualCheckInBeginDateTime>2015-06-08T07:40:00</ActualCheckInBeginDateTime>
+     <ActualCheckInEndDateTime>2015-06-08T09:40:00</ActualCheckInEndDateTime>
+    </CheckInDesk>
+   </Airport>
+  </FlightData>
+ </Data>
+</IMFRoot>
